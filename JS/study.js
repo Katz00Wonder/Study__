@@ -12,6 +12,7 @@ function module_1_question_1(){
     console.log((number_x2 - number_x1) * (number_y2 - number_y1));
 }
 // Задание № 2
+function module_1_question_2(){
 console.log("Задание № 2");
 let a = 13.123456789;
 let b = 2.123
@@ -29,8 +30,10 @@ console.log(result_a <= result_b);
 console.log(result_a === result_b);
 console.log(result_a != result_b);
 
+}
 
 // Задание № 3
+function module_1_question_3(){
 console.log("Задание № 3");
 let k = 100;
 let m = -5;
@@ -55,9 +58,11 @@ console.log(result_num_1 <= result_num_2);
 console.log(result_num_1 === result_num_2);
 console.log(result_num_1 != result_num_2);
 
-
+}
 //Модуль № 2
+
 // Задание № 1
+function module_2_question_1(){
 let password = "12-";
 
 if (password.includes("-" || "_" ) && password.length > 4) {
@@ -66,7 +71,13 @@ if (password.includes("-" || "_" ) && password.length > 4) {
 else {
     console.log("Пароль недостаточно надёжный");
 }
-// Задание № 1
+}
+
+
+// Задание № 2
+
+function module_2_question_2(){
+
 let userName = "аРтЁм".toLowerCase();
 let userSurname = "ивАноВ".toLowerCase();
 
@@ -79,18 +90,25 @@ let result_userSurname = first_symbol_userSurname.toUpperCase() + userSurname.su
 
 
 userName != result_userName && userSurname != result_userSurname ? console.log("Имя было преобразовано") : console.log("Имя осталось без изменений");
+}
 
 
 // Задание № 3
 
+
+function module_2_question_3(){
 let number = 3;
 
 number % 2 == 0 ? console.log("Число чётное") : console.log("Число нечётное");
 
+}
+
+// МОДУЛЬ 3
 
 
-// МОДУЛЬ 3 
 // задание № 1
+
+
 function module_3_question_1(){
 let start_num = 0;
 let end_num = 100;
@@ -111,6 +129,8 @@ console.log(s);}
 
 // задание № 2
 
+
+function module_3_question_1(){
 let count = 5;
 s = [];
 
@@ -127,9 +147,13 @@ for (let i in s) {
     s[i] = s[result_index];
     s[result_index] = temp;
 }
+}
 
 
 // задание № 3
+
+
+function module_3_question_3(){
 number = 3;
 count = 0
 console.log(s);
@@ -141,9 +165,13 @@ for (let i of s) {
         count++;
     }
 }
+}
+
 
 // задание № 4
 
+
+function module_3_question_4(){
 arr_1 = [2, 2, 17, 21, 45, 12, 54, 31, 53]
 arr_2 = [12, 44, 23, 5]
 
@@ -151,3 +179,4 @@ for (let i of arr_2) {
     arr_1.push(i);
 }
 console.log(arr_1);
+}
