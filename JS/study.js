@@ -1,7 +1,7 @@
 
 // Модуль 2 переменные 
 // Задание № 1
-function module_1_question_1(){
+function module_1_Question_1(){
     console.log("Задание № 1");
     let number_x1 = 2;
     let number_y1 = 3;
@@ -12,7 +12,7 @@ function module_1_question_1(){
     console.log((number_x2 - number_x1) * (number_y2 - number_y1));
 }
 // Задание № 2
-function module_1_question_2(){
+function module_1_Question_2(){
 console.log("Задание № 2");
 let a = 13.123456789;
 let b = 2.123
@@ -33,7 +33,7 @@ console.log(result_a != result_b);
 }
 
 // Задание № 3
-function module_1_question_3(){
+function module_1_Question_3(){
 console.log("Задание № 3");
 let k = 100;
 let m = -5;
@@ -62,7 +62,7 @@ console.log(result_num_1 != result_num_2);
 //Модуль № 2
 
 // Задание № 1
-function module_2_question_1(){
+function module_2_Question_1(){
 let password = "12-";
 
 if (password.includes("-" || "_" ) && password.length > 4) {
@@ -76,7 +76,7 @@ else {
 
 // Задание № 2
 
-function module_2_question_2(){
+function module_2_Question_2(){
 
 let userName = "аРтЁм".toLowerCase();
 let userSurname = "ивАноВ".toLowerCase();
@@ -96,7 +96,7 @@ userName != result_userName && userSurname != result_userSurname ? console.log("
 // Задание № 3
 
 
-function module_2_question_3(){
+function module_2_Question_3(){
 let number = 3;
 
 number % 2 == 0 ? console.log("Число чётное") : console.log("Число нечётное");
@@ -109,7 +109,7 @@ number % 2 == 0 ? console.log("Число чётное") : console.log("Числ
 // задание № 1
 
 
-function module_3_question_1(){
+function module_3_Question_1(){
 let start_num = 0;
 let end_num = 100;
 
@@ -130,7 +130,7 @@ console.log(s);}
 // задание № 2
 
 
-function module_3_question_1(){
+function module_3_Question_1(){
 let count = 5;
 s = [];
 
@@ -153,7 +153,7 @@ for (let i in s) {
 // задание № 3
 
 
-function module_3_question_3(){
+function module_3_Question_3(){
 number = 3;
 count = 0
 console.log(s);
@@ -171,7 +171,7 @@ for (let i of s) {
 // задание № 4
 
 
-function module_3_question_4(){
+function module_3_Question_4(){
 arr_1 = [2, 2, 17, 21, 45, 12, 54, 31, 53]
 arr_2 = [12, 44, 23, 5]
 
@@ -180,3 +180,52 @@ for (let i of arr_2) {
 }
 console.log(arr_1);
 }
+
+// Модуль № 4  "Функции"
+
+//Задание № 1
+function module_4_Question_1(age) {
+    let CurrentDate = new Date();
+    let CurrentYear = CurrentDate.getFullYear();
+
+    return CurrentYear - age;
+}
+
+// Задание № 2
+function filter() {
+    let whiteList = ['my-email@gmail.ru', 'jsfunc@mail.ru', 'annavkmail@vk.ru', 'fullname@skill.ru', 'goodday@day.ru'];
+
+    let blackList = ['jsfunc@mail.ru','goodday@day.ru'];
+
+    clearList = [];
+
+    for (let element of whiteList){
+        if (blackList.includes(element)){
+            continue;
+        }
+        else{
+            clearList.push(element);
+        }
+
+    }
+    return clearList;
+}
+
+
+// задание № 3
+
+function arrSort(mass){
+    for (let index = 0; index < mass.length; index++) {
+        for (let secondIndex = 0;  secondIndex < mass.length - 1; secondIndex++){
+            if (mass[secondIndex] > mass[secondIndex + 1]){
+                let temp = mass[secondIndex];
+                mass[secondIndex] = mass[secondIndex+1];
+                mass[secondIndex+1] = temp;
+                
+            }
+        }
+    }
+    return mass;
+}
+let mass = [2,5,1,3,4];
+console.log(arrSort(mass));
