@@ -229,3 +229,7 @@ function arrSort(mass){
 }
 let mass = [2,5,1,3,4];
 console.log(arrSort(mass));
+
+//Модуль "Объекты"
+
+// Задание № 1
