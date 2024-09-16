@@ -31,8 +31,10 @@ hash.update(file).digest('hex');
 
 if (hashFile === hash) {
     console.log("Файл совпадает");
+    process.exit(0);
 } else {
     console.log("Файл не совпадает");
+    process.exit(102);
 }
 
 
